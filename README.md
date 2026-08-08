@@ -98,9 +98,4 @@ Image scanning enabled on ECR push for basic vulnerability visibility.
 Terraform-managed infrastructure instead of manual console setup, for reproducibility and version control.
 Terraform state excluded from version control (.gitignore) since state files can contain sensitive resource data.
 
-**Possible Improvements**
 
-Replace static EC2 credentials with an IAM instance role
-Move Terraform state to a remote S3 backend with DynamoDB locking
-Add automated tests as a pipeline stage before deploy
-Migrate to zero-downtime deployment (e.g., blue/green via ALB + target groups)
